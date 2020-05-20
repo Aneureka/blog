@@ -28,12 +28,5 @@ script:
 after_success:
   - git config --global user.name "Aneureka"
   - git config --global user.email "aneureka2@gmail.com"
+  - sed -i "s/github_token/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: master
-  local-dir: public
