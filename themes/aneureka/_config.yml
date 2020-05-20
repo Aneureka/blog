@@ -1,0 +1,16 @@
+menu:
+  散落的叶子: /
+  # 关于: /about
+  # 友链: /friends
+  
+favicon: /img/favicon.ico
+logo: /img/favicon.ico
+cover: /img/cover.png
+
+contact:
+  EMAIL: [mailto:aneureka2@gmail.com, aneureka2@gmail.com]
+  GITHUB: [https://github.com/aneureka, "@Aneureka"]
+  TWITTER: [https://twitter.com/Aneureka, "@Aneureka"]
+  ZHIHU: [https://www.zhihu.com/people/aneureka, "@Aneureka"]
+
+startyear: 2017

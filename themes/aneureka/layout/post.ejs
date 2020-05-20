@@ -1,0 +1,19 @@
+<div class="container post-container post">
+  <div class="section">
+    <% if (!page.type) { %>
+      <!-- Title -->
+      <h2 class="title">
+        <%- page.title %>
+      </h2>
+      <!-- Date and Author -->
+      <p class="subtitle is-7 has-text-grey">
+          <%= page.date.format(config.date_format) %>
+          by <%= page.author || config.author || 'Aneureka' %>
+      </p>
+    <% } %>
+    <!-- Content -->
+    <article class="markdown-body">
+    <%- page.content %>
+    </article>
+  </div>
+</div>
