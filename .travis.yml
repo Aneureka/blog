@@ -2,6 +2,8 @@ sudo: false
 language: node_js
 node_js:
   - stable
+addons:
+  ssh_known_hosts: 47.102.147.68
 cache:
   directories:
     - node_modules
