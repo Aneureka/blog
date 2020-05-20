@@ -92,7 +92,7 @@ deploy:
   type: rsync
   host: 47.102.147.68
   user: git
-  root: /var/www/blog
+  root: /var/www/html/blog
 
 # Disqus used in post.ejs
 # disqus_shortname: aneureka
