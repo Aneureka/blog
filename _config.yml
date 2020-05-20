@@ -89,10 +89,10 @@ theme: aneureka
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo:
-    # github: git@github.com:Aneureka/blog.git,master
-    aliyun: git@47.102.147.68:/home/git/blog.git,master
+  type: rsync
+  host: 47.102.147.68
+  user: git
+  root: /var/www/blog
 
 # Disqus used in post.ejs
 # disqus_shortname: aneureka
