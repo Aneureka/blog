@@ -59,7 +59,7 @@ function refsHOC(WrappedComponent) {
 
 当 WrappedComponent 被渲染后，ref 上的回调函数 proc 就会执行，此时就有了这个 WrappedComponent 的实例的引用。这个的使用场景应该比较少，比如我们需要获取 WrappedComponent 里面的一些 state 来打印日志。但会有更好的方法来实现类似的功能，用 ref 的往往是不太建议的方式。
 
-还可以通过 Props Proxy 来抽象 state ，比如我们要让一个 <code><input /\></code> 成为 Controlled 的组件，我们可以在 HOC 中添加一些 state ，让它通过 props 去控制这个 <code><input /\></code> 。
+还可以通过 Props Proxy 来抽象 state ，比如我们要让一个 `<input />` 成为 Controlled 的组件，我们可以在 HOC 中添加一些 state ，让它通过 props 去控制这个 `<input />` 。
 
 ```javascript
 function ppHOC(WrappedComponent) {
