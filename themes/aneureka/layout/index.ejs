@@ -1,11 +1,13 @@
 
 <div class="section">
   <div class="container main">
-    <% if (config.subtitle) { %>
-      <p class="blog-subtitle"><%= config.subtitle %></p>
-    <% } %>
+    <div class="blog-subtitle">2020.6.1 前的文章均已归档到 <a href="https://github.com/Aneureka/blog/tree/master/source/_pasts">GITHUB</a> 中，不便之处<del>也不可以骂我呐</del>还请原谅 😶</div>
+    <div class="blog-subtitle">最近想试着写点自己喜欢的文字</div>
     <% if (theme.cover) { %>
       <img class="cover" src="<%- url_for(theme.cover) %>" />
+    <% } %>
+    <% if (config.subtitle) { %>
+      <p class="blog-subtitle"><%= config.subtitle %></p>
     <% } %>
     <ul class="blog-list">
       <% page.posts.each( function (item) { %>
