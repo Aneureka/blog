@@ -1,7 +1,7 @@
 ---
-title: 我是谁？
+title: 自我介绍
 type: about
-author: 郭浩滨
+author: 郭2滨
 date: 2020-01-03
 ---
 
