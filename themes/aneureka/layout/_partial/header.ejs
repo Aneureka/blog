@@ -2,11 +2,11 @@
   <nav>
     <div class="container post-container">
       <div class="menu">
-        <a class="menu-item button is-white" href="/">
+        <a class="button is-white menu-item" href="/">
           <img class="logo" src="/img/favicon.ico" />
         </a>
         <% for (var i in theme.menu) { %>
-          <a class="menu-item button is-white" href="<%- url_for(theme.menu[i]) %>">
+          <a class="button is-white menu-item" href="<%- url_for(theme.menu[i]) %>">
             <span class="menu-item-text"><%= i %></span>
           </a>
         <% } %>
