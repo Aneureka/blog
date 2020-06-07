@@ -17,6 +17,10 @@ hr {
   height: 28px;
 }
 
+.menu {
+  background-color: white;
+}
+
 .menu-item {
   padding: 18px 8px;
   border-radius: 0;
@@ -25,13 +29,19 @@ hr {
 .menu-item-text {
   font-weight: bold;
   color: #555;
-  background-color: transparent;
+}
+
+.blog-notification {
+  margin: 20px auto 20px auto;
+  color: #555;
+  font-style: italic;
 }
 
 .blog-subtitle {
   margin: 20px auto 20px auto;
-  color: #555;
-  font-style: italic;
+  color: rgb(7, 0, 65);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .cover {

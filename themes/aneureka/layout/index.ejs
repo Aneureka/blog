@@ -1,15 +1,14 @@
 
 <div class="section">
   <div class="container main">
-    <div class="blog-subtitle">2020.6.1 前的文章均已<a href="https://github.com/Aneureka/blog/tree/master/source/_pasts"><b>归档</b></a>，不便之处还请原谅</div>
-    <div class="blog-subtitle">未发布的文章/草稿会放在<a href="https://github.com/Aneureka/blog/tree/master/source/_drafts"><b>这里</b></a>，不会有人闲得无聊去看吧，不会吧不会吧不会吧？ 🤣</div>
-    <div class="blog-subtitle">然后，最近想多读点书，试着写写自己喜欢的文字</div>
+    <div class="blog-notification">2020.6.1 前的文章均已<a href="https://github.com/Aneureka/blog/tree/master/source/_pasts"><b>归档</b></a>，不便之处还请原谅</div>
+    <div class="blog-notification">未发布的文章/草稿会放在<a href="https://github.com/Aneureka/blog/tree/master/source/_drafts"><b>这里</b></a>，不会有人闲得无聊去看吧，不会吧不会吧不会吧？ 🤣</div>
+    <div class="blog-notification">然后，最近想多读点书，试着写写自己喜欢的文字</div>
     <% if (theme.cover) { %>
       <img class="cover" src="<%- url_for(theme.cover) %>" />
     <% } %>
-    <% if (config.subtitle) { %>
-      <p class="blog-subtitle"><%= config.subtitle %></p>
-    <% } %>
+    <div class="blog-subtitle">近期动态</div>
+    <blockquote class="twitter-tweet" data-theme="light"><p lang="zh" dir="ltr">MIT 这门课简直灵性 🥳<a href="https://t.co/XmSAYn1QFv">https://t.co/XmSAYn1QFv</a><br><br>We all missed these in our *holy* class🤣</p>&mdash; Hiki (@Aneureka) <a href="https://twitter.com/Aneureka/status/1269627995313958912?ref_src=twsrc%5Etfw">June 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <ul class="blog-list">
       <% page.posts.each( function (item) { %>
         <li class="blog-list-item">
