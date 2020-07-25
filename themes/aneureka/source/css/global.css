@@ -65,6 +65,7 @@ hr {
 
 .blog-list {
   list-style-type: none;
+  margin-top: 1rem;
 }
 
 .blog-list-item {
