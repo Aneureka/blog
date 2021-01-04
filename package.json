@@ -8,6 +8,7 @@
   "dependencies": {
     "hexo": "^4.2.1",
     "hexo-deployer-git": "^2.1.0",
+    "hexo-deployer-rsync": "^1.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
@@ -15,12 +16,14 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
   },
   "scripts": {
-    "start": "hexo s",
-    "build": "hexo g",
-    "deploy": "hexo g && git commit -m \"Update blog\" -a && git push"
+    "build": "npm build",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
   }
 }
