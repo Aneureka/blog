@@ -1,10 +1,20 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #1a1919;
+}
+
 nav {
-  position: fixed; 
+  position: sticky;
   top: 0; 
   width: 100%; 
-  /* background-color: white;  */
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 hr {
@@ -12,28 +22,28 @@ hr {
   height: 1px;
 }
 
+img {
+  isolation: isolate;
+}
+
 .logo {
   width: 28px;
   height: 28px;
 }
 
-.menu {
-  background-color: white;
-}
-
 .menu-item {
   padding: 18px 8px;
   border-radius: 0;
+  background-color: transparent !important;
 }
 
 .menu-item-text {
   font-weight: bold;
-  color: #555;
+  text-rendering: optimizeLegibility;
 }
 
 .blog-notification {
   margin: 20px auto 20px auto;
-  color: #555;
   font-style: italic;
 }
 
@@ -61,6 +71,7 @@ hr {
 
 .section {
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .blog-list {
@@ -91,4 +102,10 @@ hr {
 .contact-list-item span {
   font-weight: 500;
   margin-left: -0.5rem;
+}
+
+.darkmode-layer, .darkmode-toggle { z-index: 8023; }
+
+.darkmode--activated img, .darkmode--activated .darkmode-ignore {
+  mix-blend-mode: difference;
 }
