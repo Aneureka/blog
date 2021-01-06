@@ -22,6 +22,10 @@ hr {
   height: 1px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .logo {
   width: 28px;
   height: 28px;
@@ -31,6 +35,7 @@ hr {
   padding: 18px 8px;
   border-radius: 0;
   background-color: transparent !important;
+  text-decoration: none;
 }
 
 .menu-item-text {
