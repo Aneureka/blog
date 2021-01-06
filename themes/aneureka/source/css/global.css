@@ -22,10 +22,6 @@ hr {
   height: 1px;
 }
 
-img {
-  isolation: isolate;
-}
-
 .logo {
   width: 28px;
   height: 28px;
@@ -43,7 +39,7 @@ img {
 }
 
 .blog-notification {
-  margin: 20px auto 20px auto;
+  margin: 10px auto 10px auto;
   font-style: italic;
 }
 
@@ -56,7 +52,7 @@ img {
 
 .cover {
   margin-bottom: 10px;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .main {
@@ -71,7 +67,7 @@ img {
 
 .section {
   padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 10px;
 }
 
 .blog-list {
@@ -104,8 +100,8 @@ img {
   margin-left: -0.5rem;
 }
 
-.darkmode-layer, .darkmode-toggle { z-index: 8023; }
-
 .darkmode--activated img, .darkmode--activated .darkmode-ignore {
   mix-blend-mode: difference;
 }
+
+.darkmode-layer, .darkmode-toggle { z-index: 8023; }
