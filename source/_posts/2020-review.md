@@ -1,5 +1,5 @@
 ---
-title: REVIEW OF 2020
+title: REVIEW OF 2020 [Updated]
 date: 2021-01-05 00:51:05
 tags: Life
 ---
