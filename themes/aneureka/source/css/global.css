@@ -39,7 +39,7 @@ a {
 }
 
 .menu-item-text {
-  font-weight: bold;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
 }
 
