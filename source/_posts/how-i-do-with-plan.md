@@ -24,7 +24,7 @@ tags: 生活
 
 <div style="display:flex; flex-direction:column; align-items:center;">
   <img width="300px" src="https://i.loli.net/2021/01/31/xrlUEePDhq7VLQf.jpg" />
-  <span style="color:grey; font-size:14px;">Google Keep</span>
+  <span style="color:grey; font-size:14px; margin-top:-10px;">Google Keep</span>
 </div>
 
 一段时间后，#MAIN# 束之高阁虚无缥缈，#RECENT# 则沦为 TODO，两者从此不再相见。
@@ -50,7 +50,7 @@ tags: 生活
 
 <div style="display:flex; flex-direction:column; align-items:center;">
   <img width="500px" src="https://i.loli.net/2021/01/31/M4bXfZv7ndyCz9L.png" />
-  <span style="color:grey; font-size:14px;">滴答清单</span>
+  <span style="color:grey; font-size:14px; margin-top:-10px;">滴答清单</span>
 </div>
 
 是的，现在捡起了之前一直用不惯的滴答清单，虽然还是有各种各样的问题（已经提了三次反馈，回复很及时，好评~），以双月为一个周期制定 OKR，然后根据 OKR 将事情细化成 Task，细化到最多三天可以完成的事情上（是不是有点像 Sprint），当所有的 Task 都完成后，关键结果也就达到了（理想的情况下）。至于怎么完成 Task，拖延症怎么办，就看个人情况了。
@@ -59,7 +59,7 @@ tags: 生活
 
 <div style="text-align:center;"><img width="200px"  src="https://i.loli.net/2021/01/31/eaN83EwDG2fCny7.png" /></div>
 
-并不是很成熟的计划管理方式，但出发点是不会变的 —— **是对生活的热爱和记录**。
+并不是很成熟的计划管理方式，但出发点是不会变的 —— **是对生活的热爱和记录呀**。
 
 最后要说的一点 —— 工具是最次要的，可以的话请忘记本文提到的所有工具，先想想为什么要做计划管理，为什么要记录生活。
 
