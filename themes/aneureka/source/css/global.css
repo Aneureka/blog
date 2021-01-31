@@ -84,6 +84,10 @@ a {
   padding: 0 0 15px 0;
 }
 
+.blog-list-item a {
+  text-decoration: none;
+}
+
 .footer {
   background-color: transparent;
   padding-top: 0;
@@ -104,6 +108,7 @@ a {
   font-weight: 500;
   margin-left: -0.5rem;
 }
+
 
 .darkmode--activated img, .darkmode--activated .darkmode-ignore {
   mix-blend-mode: difference;
