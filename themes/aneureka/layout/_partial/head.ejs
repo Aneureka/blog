@@ -5,8 +5,10 @@
   <meta name="author" content="Aneureka">
   <meta name="description" content="<%- config.description || '要技艺超群，要予人温暖' %>">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title || '散落的叶子' %>">
   <title><% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title || '散落的叶子' %></title>
-
+  
   <% if (theme.favicon) { %>
     <link rel="icon" href="<%- theme.favicon %>" />
     <link rel="apple-touch-icon" href="<%- theme.favicon %>" />
