@@ -4,7 +4,7 @@
 
 # Site
 title: 散落的叶子
-subtitle: 
+subtitle:
 description: 要技艺超群，要予人温暖。
 keywords:
 author: Aneureka
@@ -19,7 +19,7 @@ marked:
   breaks: true
   smartLists: true
   smartypants: true
-  modifyAnchors: ''
+  modifyAnchors: ""
   autolink: true
 
 # URL
@@ -54,16 +54,16 @@ highlight:
   line_number: false
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 0
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -89,14 +89,13 @@ theme: aneureka
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  - type: rsync
-    host: 47.102.147.68
-    user: git
-    root: /var/www/html/blog
+  # - type: rsync
+  #   host: 47.102.147.68
+  #   user: git
+  #   root: /var/www/html/blog
   - type: git
     repo: https://github_token@github.com/Aneureka/Aneureka.github.io.git
     branch: master
-
 
 # Disqus used in post.ejs
 # disqus_shortname: aneureka
@@ -108,6 +107,6 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: source/img/favicon.ico
