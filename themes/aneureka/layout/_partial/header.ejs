@@ -1,17 +1,16 @@
-<div class="blog-header">
+<div class="blog-header section">
   <nav>
-    <div class="container post-container">
+    <div class="container main header">
+      <a href="/">
+        <img class="logo" src="/img/favicon.ico" />
+      </a>
       <div class="menu">
-        <a class="button is-white menu-item" href="/">
-          <img class="logo" src="/img/favicon.ico" />
-        </a>
         <% for (var i in theme.menu) { %>
-          <a class="button is-white menu-item" href="<%- url_for(theme.menu[i]) %>">
-            <span class="menu-item-text"><%= i %></span>
-          </a>
+        <a class="menu-item" href="<%- url_for(theme.menu[i]) %>">
+          <span class="menu-item-text"><%= i %></span>
+        </a>
         <% } %>
       </div>
     </div>
   </nav>
 </div>
-

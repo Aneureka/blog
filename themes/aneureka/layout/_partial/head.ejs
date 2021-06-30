@@ -1,28 +1,38 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Aneureka">
-  <meta name="description" content="<%- config.description || '要技艺超群，要予人温暖' %>">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="<% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title || '散落的叶子' %>">
-  <meta property="og:site_name" content="<%= config.title || '散落的叶子' %>">
-  <meta property="og:title" content="<% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title || '散落的叶子' %>">
-  <meta name="og:url" content="<%- url %>">
-  <title><% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title || '散落的叶子' %></title>
-  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Aneureka" />
+  <meta name="description" content="<%- config.description %>" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+    property="og:title"
+    content="<% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title ||
+    '散落的叶子' %>"
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%- url %>" />
+  <meta property="og:description" content="<%- config.description %>" />
+  <meta property="og:image" content="<%- config.url %>/img/favicon.ico" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Aneureka" />
+  <meta name="twitter:url" content="<%- url %>" />
+  <meta name="twitter:title" content="散落的叶子" />
+  <meta name="twitter:description" content="<%- config.description %>" />
+  <meta name="twitter:image" content="<%- config.url %>/img/cover.png" />
+  <title>
+    <% if (page.title) { %><%= page.title + ' · ' %><% } %><%= config.title ||
+    '散落的叶子' %>
+  </title>
   <% if (theme.favicon) { %>
-    <link rel="icon" href="<%- theme.favicon %>" />
-    <link rel="apple-touch-icon" href="<%- theme.favicon %>" />
-    <link rel="bookmark" href="<%- theme.favicon %>" />
-    <link rel="shortcut icon" href="<%- theme.favicon %>" />
+  <link rel="icon" href="<%- theme.favicon %>" />
+  <link rel="apple-touch-icon" href="<%- theme.favicon %>" />
+  <link rel="bookmark" href="<%- theme.favicon %>" />
+  <link rel="shortcut icon" href="<%- theme.favicon %>" />
   <% } %>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
-
-  <%- css('css/blog.css') %>
-  <%- css('css/global.css') %>
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+  />
+  <%- css('css/blog.css') %> <%- css('css/global.css') %>
 </head>

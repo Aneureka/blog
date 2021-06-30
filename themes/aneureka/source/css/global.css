@@ -1,46 +1,84 @@
-body, html {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+html,
+body {
+  width: 100vw;
 }
 
 body {
-  background-color: #fff;
+  background-color: #f3f2ee;
   color: #1a1919;
 }
 
 nav {
-  position: sticky;
-  top: 0; 
-  width: 100%; 
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  /* z-index: 10; */
-}
-
-hr {
-  background-color: #dbdbdb;
-  height: 1px;
+  height: 5rem;
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none !important;
+  background-color: transparent;
 }
 
-.logo {
-  width: 28px;
-  height: 28px;
+p a,
+.footer a {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+}
+
+p a::after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
+  /* --bg-opacity: 1; */
+  background-color: #ab3c3a44;
+  /* background-color: rgba(183, 28, 28, var(--bg-opacity)); */
+  --bg-opacity: 0.3;
+  width: 100%;
+  height: 0.6rem;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-item {
-  padding: 18px 8px;
+  padding-left: 0.5rem;
   border-radius: 0;
   background-color: transparent !important;
   text-decoration: none;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
 .menu-item-text {
   font-weight: 500;
+  color: #ab3b3a;
+  font-weight: bold;
   text-rendering: optimizeLegibility;
+}
+
+.introduction {
+  margin-top: 1rem;
+}
+
+.introduction p {
+  margin-bottom: 1rem;
 }
 
 .blog-notification {
@@ -90,28 +128,43 @@ a {
 
 .footer {
   background-color: transparent;
-  padding-top: 0;
-  padding-bottom: 20px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px dashed #ab3c3a44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
 }
 
 .contact-list {
-  list-style-type: disc;
+  list-style-type: none;
   list-style-position: inside;
   line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: fit-content;
+  /* overflow: hidden; */
 }
 
 .contact-list-item {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .contact-list-item span {
-  font-weight: 500;
+  font-weight: bold;
   margin-left: -0.5rem;
 }
 
-
-.darkmode--activated img, .darkmode--activated .darkmode-ignore {
-  mix-blend-mode: difference;
+.copyright {
+  margin-top: 0.25rem;
 }
 
-.darkmode-layer, .darkmode-toggle { z-index: 8023; }
+.post {
+  margin-top: 1rem;
+}

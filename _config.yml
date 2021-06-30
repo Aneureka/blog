@@ -1,7 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: 散落的叶子
 subtitle:
@@ -89,12 +85,12 @@ theme: aneureka
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  # - type: rsync
-  #   host: 47.102.147.68
-  #   user: git
-  #   root: /var/www/html/blog
+  - type: rsync
+    host: 1.15.150.19
+    user: git
+    root: /var/www/html/cn/aneureka
   - type: git
-    repo: https://github_token@github.com/Aneureka/Aneureka.github.io.git
+    repo: https://github.com/Aneureka/Aneureka.github.io.git
     branch: master
 
 # Disqus used in post.ejs
